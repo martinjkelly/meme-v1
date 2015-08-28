@@ -34,6 +34,12 @@
                                             <action selector="shareMeme:" destination="vXZ-lx-hvc" id="kGm-iU-M1p"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="44v-FS-kx5"/>
+                                    <barButtonItem systemItem="cancel" id="GZH-2W-GgM">
+                                        <connections>
+                                            <action selector="cancelMeme:" destination="vXZ-lx-hvc" id="FBV-vo-dKo"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GP1-q7-R13">
@@ -105,6 +111,7 @@
                         <outlet property="bottomBar" destination="GP1-q7-R13" id="biC-WD-boL"/>
                         <outlet property="bottomTextField" destination="YD7-rM-5FV" id="hN8-qu-aBr"/>
                         <outlet property="cameraButton" destination="aUf-XY-jTz" id="nhf-BX-n9E"/>
+                        <outlet property="cancelButton" destination="kLf-iO-L0h" id="juC-NS-twd"/>
                         <outlet property="imagePickerView" destination="KeG-th-PML" id="Te2-z8-DLs"/>
                         <outlet property="shareButton" destination="z3Y-Yr-AHj" id="SsC-PO-LIJ"/>
                         <outlet property="topBar" destination="kLf-iO-L0h" id="hpn-Wp-Y0v"/>
