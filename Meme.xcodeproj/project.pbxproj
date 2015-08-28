@@ -13,6 +13,7 @@
 		F3B7E2721B8F9063008D05F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B7E2711B8F9063008D05F6 /* Images.xcassets */; };
 		F3B7E2751B8F9063008D05F6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3B7E2731B8F9063008D05F6 /* LaunchScreen.xib */; };
 		F3B7E2811B8F9063008D05F6 /* MemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B7E2801B8F9063008D05F6 /* MemeTests.swift */; };
+		F3B7E28B1B8FA1C3008D05F6 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B7E28A1B8FA1C3008D05F6 /* Meme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		F3B7E27A1B8F9063008D05F6 /* MemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B7E27F1B8F9063008D05F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3B7E2801B8F9063008D05F6 /* MemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeTests.swift; sourceTree = "<group>"; };
+		F3B7E28A1B8FA1C3008D05F6 /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		F3B7E28C1B8FAF48008D05F6 /* Impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3708EFD1B9073F800F2DE07 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F3B7E26E1B8F9063008D05F6 /* Main.storyboard */,
+				F3B7E2731B8F9063008D05F6 /* LaunchScreen.xib */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F3708EFE1B90740800F2DE07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3B7E28A1B8FA1C3008D05F6 /* Meme.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F3708EFF1B90741800F2DE07 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3B7E26C1B8F9063008D05F6 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		F3B7E25C1B8F9063008D05F6 = {
 			isa = PBXGroup;
 			children = (
@@ -77,11 +105,9 @@
 		F3B7E2671B8F9063008D05F6 /* Meme */ = {
 			isa = PBXGroup;
 			children = (
-				F3B7E26A1B8F9063008D05F6 /* AppDelegate.swift */,
-				F3B7E26C1B8F9063008D05F6 /* ViewController.swift */,
-				F3B7E26E1B8F9063008D05F6 /* Main.storyboard */,
-				F3B7E2711B8F9063008D05F6 /* Images.xcassets */,
-				F3B7E2731B8F9063008D05F6 /* LaunchScreen.xib */,
+				F3708EFF1B90741800F2DE07 /* ViewControllers */,
+				F3708EFE1B90740800F2DE07 /* Model */,
+				F3708EFD1B9073F800F2DE07 /* Storyboards */,
 				F3B7E2681B8F9063008D05F6 /* Supporting Files */,
 			);
 			path = Meme;
@@ -90,6 +116,9 @@
 		F3B7E2681B8F9063008D05F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F3B7E26A1B8F9063008D05F6 /* AppDelegate.swift */,
+				F3B7E2711B8F9063008D05F6 /* Images.xcassets */,
+				F3B7E28C1B8FAF48008D05F6 /* Impact.ttf */,
 				F3B7E2691B8F9063008D05F6 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B7E28B1B8FA1C3008D05F6 /* Meme.swift in Sources */,
 				F3B7E26D1B8F9063008D05F6 /* ViewController.swift in Sources */,
 				F3B7E26B1B8F9063008D05F6 /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +439,7 @@
 				F3B7E2861B8F9063008D05F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3B7E2871B8F9063008D05F6 /* Build configuration list for PBXNativeTarget "MemeTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +448,7 @@
 				F3B7E2891B8F9063008D05F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
