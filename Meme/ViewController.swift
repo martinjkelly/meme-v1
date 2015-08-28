@@ -31,11 +31,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        unsubscribeFromKeyboardNotifications()
-    }
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -49,6 +44,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         bottomTextField.textAlignment = NSTextAlignment.Center
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        unsubscribeFromKeyboardNotifications()
+    }
+    
+    //MARK: Meme Generation
     func save(memeImage:UIImage) {
         var meme = Meme(topString: topTextField.text!, bottomString: topTextField.text!, originalImage: self.imagePickerView.image!, memeImage: memeImage)
     }
